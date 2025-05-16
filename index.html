@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Food Recommender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Food Recommender</h1>
+
+        <div class="input-group">
+            <label for="mood">What's your current mood?</label>
+            <select id="mood">
+                <option value="">-- Select Mood --</option>
+                <option value="happy">Happy & Energetic</option>
+                <option value="sad">Sad / Comfort Food Needed</option>
+                <option value="tired">Tired / Quick & Easy</option>
+                <option value="celebratory">Celebratory / Special</option>
+                <option value="stressed">Stressed / Soothing</option>
+                <option value="adventurous">Feeling Adventurous</option>
+                <option value="not_sure">Not Sure / Surprise Me!</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="query">Any specific cravings or ingredients on hand? (Optional)</label>
+            <input type="text" id="query" placeholder="e.g., 'paneer', 'spicy', 'something light'">
+        </div>
+
+        <button class="send-button" id="getSuggestionBtn">Get Food Suggestion!</button>
+
+        <div class="chat-box" id="chatBox">
+            </div>
+        <div class="disclaimer">[IK Food Bot: Suggestions are for fun! Verify recipes and ingredients.]</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
